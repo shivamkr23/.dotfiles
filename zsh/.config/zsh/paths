@@ -1,2 +1,3 @@
 . ~/.asdf/plugins/java/set-java-home.zsh
 . ~/.asdf/plugins/golang/set-env.zsh
+source ~/.config/lf/lfcd.sh

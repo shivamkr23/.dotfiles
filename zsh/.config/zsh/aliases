@@ -1,0 +1,18 @@
+alias cls=clear
+alias vim=nvim
+alias ls=eza
+alias cd=z
+
+
+
+
+
+
+
+
+
+
+
+
+
+bindkey -s '^o' 'lfcd\n'
