@@ -15,4 +15,3 @@ alias cd=z
 
 
 
-bindkey -s '^o' 'lfcd\n'
