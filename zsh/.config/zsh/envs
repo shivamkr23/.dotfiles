@@ -1,2 +1,5 @@
 export LANG=en_US.UTF-8
 export GOHOME=$GOROOT/bin
+
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH

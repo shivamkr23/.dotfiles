@@ -241,6 +241,7 @@ bar {
 bindsym $mod+Shift+x exec i3lock -i "${HOME}/.config/i3/i3lock.png"
 exec_always --no-startup-id "bash ~/.config/i3/auto.sh both"
 exec_always --no-startup-id compton --config ~/.config/compton.conf
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 
 # # Sreen brightness controls
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl --min-val=2 -q set 3%- && $refresh_i3status
