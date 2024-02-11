@@ -7,14 +7,3 @@
 *.vt100.reverseVideo: true
 *.vt100.faceName: monospace:size=15:antialias:false
 *.vt100.bellIsUrgent: true
-
-
-
-
-
-
-
-
-*.vt100.translations: #override \n\
-  Ctrl Shift <key>C: copy-selection(CLIPBOARD) \n\
-  Ctrl Shift <key>V: insert-selection(CLIPBOARD)

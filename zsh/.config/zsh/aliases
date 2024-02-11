@@ -1,16 +1,5 @@
 alias cls=clear
 alias vim=nvim
 alias ls=eza
-
-
-
-
-
-
-
-
-
-
-
-
-
+alias find=fd
+alias grep=rg
