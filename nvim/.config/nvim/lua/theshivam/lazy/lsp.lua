@@ -27,6 +27,9 @@ return {
         lspconfig.pyright.setup({
             capabilities = capabilities,
         })
+        lspconfig.ruff_lsp.setup({
+            capabilities = capabilities,
+        })
         lspconfig.lua_ls.setup({
             capabilities = capabilities,
         })
