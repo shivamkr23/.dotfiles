@@ -156,48 +156,7 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
-# NOTE: This is some real tom fooliery with my keyboard layout
-#  ZMK will send a shift mod with the items that require a shift key on a
-#  regular keyboard.  so though it defines a keycode as "LEFT_BRACE" it really
-#  is shift_L + LEFT_BRACE.  So you will notice the odd peppering of shifts and
-#  non shifts
-# switch to workspace
-bindsym $mod+Shift+plus workspace number $ws1
-bindsym $mod+bracketleft workspace number $ws2
-bindsym $mod+Shift+braceleft workspace number $ws3
-bindsym $mod+Shift+parenleft workspace number $ws4
-bindsym $mod+Shift+ampersand workspace number $ws5
-bindsym $mod+equal workspace number $ws6
-bindsym $mod+Shift+parenright workspace number $ws7
-bindsym $mod+Shift+braceright workspace number $ws8
-bindsym $mod+bracketright workspace number $ws9
-bindsym $mod+Shift+asterisk workspace number $ws10
-#
-# # NOTE: since i have to press shift to get these symbols
-# # move focused container to workspace.
-# #  I wanted to use this as my method of moving spaces around, but it doesn't
-# #  seem to work, but when i provide the keycode + shift it seems to work well.
-# # bindsym $mod+Shift+kp_1 move container to workspace 1
-# # bindsym $mod+Shift+kp_2 move container to workspace 2
-# # bindsym $mod+Shift+kp_3 move container to workspace 3
-# # bindsym $mod+Shift+kp_4 move container to workspace 4
-# # bindsym $mod+Shift+kp_5 move container to workspace 5
-# # bindsym $mod+Shift+kp_6 move container to workspace 6
-# # bindsym $mod+Shift+kp_7 move container to workspace 7
-# # bindsym $mod+Shift+kp_8 move container to workspace 8
-# # bindsym $mod+Shift+kp_9 move container to workspace 9
-# # bindsym $mod+Shift+kp_0 move container to workspace 10
-#
-bindcode $mod+Shift+87 move container to $ws1
-bindcode $mod+Shift+88 move container to $ws2
-bindcode $mod+Shift+89 move container to $ws3
-bindcode $mod+Shift+83 move container to $ws4
-bindcode $mod+Shift+84 move container to $ws5
-bindcode $mod+Shift+85 move container to $ws6
-bindcode $mod+Shift+79 move container to $ws7
-bindcode $mod+Shift+80 move container to $ws8
-bindcode $mod+Shift+81 move container to $ws9
-bindcode $mod+Shift+90 move container to $ws10
+
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
