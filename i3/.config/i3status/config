@@ -12,7 +12,7 @@ general {
 }
 
 order += "disk /"
-order += "disk /media/king/shivam"
+order += "disk /media/king/shivam/"
 order += "battery all"
 order += "load"
 order += "tztime local"
@@ -33,6 +33,6 @@ disk "/" {
         format = "%avail"
 }
 
-disk "/media/king/shivam" {
+disk "/media/king/shivam/" {
         format = "%avail"
 }
