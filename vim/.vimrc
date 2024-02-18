@@ -86,6 +86,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-fugitive'
 Plug 'sheerun/vim-polyglot'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'morhetz/gruvbox'
 Plug 'rose-pine/vim', {'as': 'rosepine'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -97,7 +98,7 @@ call plug#end()
 
 set termguicolors
 set background=dark
-colorscheme rosepine
+colorscheme gruvbox
 
 nmap <leader>u :UndotreeToggle<CR>
 nmap <leader>e :Ex<CR>
@@ -129,6 +130,7 @@ augroup mygroup
   autocmd!
   " Update signature help on jump placeholder
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+  autocmd CursorHold * silent call CocActionAsync('highlight')
 augroup end
 
 nmap <leader>vrn <Plug>(coc-rename)
