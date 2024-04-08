@@ -44,6 +44,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
+bindsym $mod+Shift+w  exec diodon
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -60,6 +61,11 @@ bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
+
+bindsym $mod+i exec google-chrome-stable
+bindsym $mod+Shift+i exec google-chrome-stable --incognito
+bindsym $mod+p exec firefox
+bindsym $mod+Shift+p exec firefox -private-window
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id dmenu_run

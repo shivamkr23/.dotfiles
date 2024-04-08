@@ -51,6 +51,9 @@ return {
         lspconfig.jsonls.setup({
             capabilities = capabilities,
         })
+        lspconfig.bashls.setup({
+            capabilities = capabilities,
+        })
 
         local cmp_select = { behavior = cmp.SelectBehavior.Select }
         cmp.setup({

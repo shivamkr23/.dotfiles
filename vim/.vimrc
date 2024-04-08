@@ -98,7 +98,7 @@ call plug#end()
 
 set termguicolors
 set background=dark
-colorscheme gruvbox
+colorscheme rosepine
 
 nmap <leader>u :UndotreeToggle<CR>
 nmap <leader>e :Ex<CR>
