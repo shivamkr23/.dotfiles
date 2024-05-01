@@ -54,6 +54,18 @@ return {
         lspconfig.bashls.setup({
             capabilities = capabilities,
         })
+        lspconfig.angularls.setup({
+            capabilities = capabilities,
+        })
+        lspconfig.kotlin_language_server.setup({
+            capabilities = capabilities,
+        })
+        lspconfig.svelte.setup({
+            capabilities = capabilities,
+        })
+        lspconfig.volar.setup({
+            capabilities = capabilities,
+        })
 
         local cmp_select = { behavior = cmp.SelectBehavior.Select }
         cmp.setup({
