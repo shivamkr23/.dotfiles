@@ -2,5 +2,8 @@ export LANG=en_US.UTF-8
 export GOHOME=$GOROOT/bin
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.local/xbin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
+export GEM_HOME=$HOME/gems
+export PATH=$HOME/gems/bin:$PATH

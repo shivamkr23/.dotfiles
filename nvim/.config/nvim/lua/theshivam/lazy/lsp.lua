@@ -42,7 +42,7 @@ return {
         lspconfig.gopls.setup({
             capabilities = capabilities,
         })
-        lspconfig.eslint.setup({
+        lspconfig.cssls.setup({
             capabilities = capabilities,
         })
         lspconfig.rust_analyzer.setup({
@@ -64,6 +64,21 @@ return {
             capabilities = capabilities,
         })
         lspconfig.volar.setup({
+            capabilities = capabilities,
+        })
+        lspconfig.emmet_ls.setup({
+            capabilities = capabilities,
+        })
+        lspconfig.ruby_lsp.setup({
+            capabilities = capabilities,
+        })
+        lspconfig.vimls.setup({
+            capabilities = capabilities,
+        })
+        lspconfig.yamlls.setup({
+            capabilities = capabilities,
+        })
+        lspconfig.intelephense.setup({
             capabilities = capabilities,
         })
 

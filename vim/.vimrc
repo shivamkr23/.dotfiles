@@ -95,6 +95,43 @@ Plug 'mbbill/undotree'
 Plug 'majutsushi/tagbar'
 
 call plug#end()
+function! PlugCoc(info) abort
+  if a:info.status ==? 'installed' || a:info.force
+    !yarn install
+    call coc#util#install_extension(join(get(s:, 'coc_extensions', [])))
+  elseif a:info.status ==? 'updated'
+    !yarn install
+    call coc#util#update()
+  endif
+  call PlugRemotePlugins(a:info)
+endfunction
+
+let g:coc_global_extensions = [
+\   'coc-css',
+\   'coc-html',
+\   'coc-json',
+\   'coc-yaml',
+\   'coc-emmet',
+\   'coc-emoji',
+\   'coc-tsserver',
+\   'coc-ultisnips',
+\   'coc-clangd',
+\   'coc-kotlin',
+\   'coc-lua',
+\   'coc-vimlsp',
+\   'coc-rust-analyzer',
+\   '@yaegassy/coc-ruff',
+\   'coc-pyright',
+\   '@yaegassy/coc-volar',
+\   'coc-clangd',
+\   'coc-sh',
+\   'coc-angular',
+\   'coc-go',
+\   'coc-java',
+\   'coc-svelte',
+\   'coc-solargraph',
+\   '@yaegassy/coc-intelephense',
+\ ]
 
 set termguicolors
 set background=dark
