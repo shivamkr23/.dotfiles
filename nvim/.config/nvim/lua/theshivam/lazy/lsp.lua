@@ -81,6 +81,9 @@ return {
         lspconfig.intelephense.setup({
             capabilities = capabilities,
         })
+        lspconfig.marksman.setup({
+            capabilities = capabilities,
+        })
 
         local cmp_select = { behavior = cmp.SelectBehavior.Select }
         cmp.setup({

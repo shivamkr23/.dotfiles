@@ -131,6 +131,7 @@ let g:coc_global_extensions = [
 \   'coc-svelte',
 \   'coc-solargraph',
 \   '@yaegassy/coc-intelephense',
+\   '@yaegassy/coc-marksman',
 \ ]
 
 set termguicolors
