@@ -84,6 +84,9 @@ return {
         lspconfig.marksman.setup({
             capabilities = capabilities,
         })
+        lspconfig.html.setup({
+            capabilities = capabilities,
+        })
 
         local cmp_select = { behavior = cmp.SelectBehavior.Select }
         cmp.setup({
